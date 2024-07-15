@@ -29,9 +29,11 @@ from telegram import (
 from tests.auxil.slots import mro_slots
 
 
+
 @pytest.fixture(scope="module")
 def inline_keyboard_button():
     return InlineKeyboardButton(
+
         TestInlineKeyboardButtonBase.text,
         url=TestInlineKeyboardButtonBase.url,
         callback_data=TestInlineKeyboardButtonBase.callback_data,
